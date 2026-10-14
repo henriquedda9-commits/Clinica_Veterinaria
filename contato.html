@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | I Love Pet</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">🐾 I Love <span>Pet</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="index.html">Início</a><a href="servicos.html">Serviços</a>
+      <a href="sobre nos.html">Sobre nós</a><a href="agendamento.html">Agendamento</a><a class="active" href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="eyebrow">Fale com a gente</span>
+      <h1>Estamos aqui para ajudar você e seu pet.</h1>
+      <p>Envie uma mensagem ou consulte os nossos canais de atendimento.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <div>
+        <span class="eyebrow">Entre em contato</span>
+        <h2>Vamos conversar?</h2>
+        <p class="muted">Os dados abaixo são exemplos demonstrativos. Substitua-os pelas informações reais da clínica antes de publicar o site.</p>
+
+        <div class="contact-card">
+          <span class="contact-icon">📍</span><div><h3>Endereço</h3><p>Cadastre aqui o endereço da clínica.</p></div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">📞</span><div><h3>Telefone</h3><p>(00) 00000-0000 — número demonstrativo</p></div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">✉️</span><div><h3>E-mail</h3><p>contato@ilovepet.com.br — exemplo</p></div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">🕒</span><div><h3>Horário de atendimento</h3><p>Cadastre os dias e horários reais de funcionamento.</p></div>
+        </div>
+
+        <a class="btn" href="agendamento.html">Solicitar agendamento ↗</a>
+      </div>
+
+      <form class="form-card" id="contact-form">
+        <h2>Envie uma mensagem</h2>
+        <p class="form-description">Preencha os campos para preparar sua mensagem.</p>
+        <label for="nome-contato">Seu nome *</label>
+        <input id="nome-contato" name="nome" required autocomplete="name" placeholder="Nome completo">
+
+        <label for="email-contato">Seu e-mail *</label>
+        <input id="email-contato" name="email" type="email" required autocomplete="email" placeholder="voce@exemplo.com">
+
+        <label for="assunto">Assunto *</label>
+        <select id="assunto" name="assunto" required>
+          <option value="">Selecione</option>
+          <option>Dúvidas sobre serviços</option><option>Agendamento</option>
+          <option>Informações gerais</option><option>Outro assunto</option>
+        </select>
+
+        <label for="mensagem-contato">Mensagem *</label>
+        <textarea id="mensagem-contato" name="mensagem" rows="5" required placeholder="Como podemos ajudar?"></textarea>
+
+        <button class="btn btn-full" type="submit">Preparar mensagem ↗</button>
+        <div id="contact-result" class="form-result" role="status" aria-live="polite" hidden></div>
+        <p class="form-footnote">A mensagem não é enviada automaticamente nesta versão demonstrativa.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo logo-light" href="index.html">🐾 I Love <span>Pet</span></a>
+    <p>Amor e cuidado em cada patinha.</p>
+    <div class="footer-links"><a href="index.html">Início</a><a href="servicos.html">Serviços</a><a href="sobre.html">Sobre nós</a></div>
+    <small>© <span id="year"></span> I Love Pet. Projeto demonstrativo.</small>
+  </footer>
+</body>
+</html>

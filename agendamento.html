@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento | I Love Pet</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">🐾 I Love <span>Pet</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="index.html">Início</a><a href="servicos.html">Serviços</a>
+      <a href="sobre nos.html">Sobre nós</a><a class="active" href="agendamento.html">Agendamento</a><a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="eyebrow">Estamos esperando vocês</span>
+      <h1>Agende um momento de cuidado.</h1>
+      <p>Preencha os dados abaixo para solicitar um horário para seu melhor amigo.</p>
+    </section>
+
+    <section class="section form-section">
+      <div class="form-info">
+        <span class="eyebrow">I Love Pet</span>
+        <h2>Um cuidado especial começa aqui.</h2>
+        <p>Informe seus dados e as preferências de atendimento. Nossa equipe poderá utilizar essas informações para organizar o contato, após a integração do sistema.</p>
+        <div class="info-item"><span>🩺</span><div><strong>Atendimento cuidadoso</strong><p>Seu pet é único para nós.</p></div></div>
+        <div class="info-item"><span>📅</span><div><strong>Data de sua preferência</strong><p>O horário depende de confirmação.</p></div></div>
+        <div class="info-item"><span>💙</span><div><strong>Feito com carinho</strong><p>Saúde e bem-estar em primeiro lugar.</p></div></div>
+      </div>
+
+      <form class="form-card" id="booking-form">
+        <h2>Solicitar agendamento</h2>
+        <p class="form-description">Campos marcados com * são obrigatórios.</p>
+
+        <label for="tutor">Nome do tutor *</label>
+        <input id="tutor" name="tutor" type="text" autocomplete="name" required placeholder="Seu nome completo">
+
+        <div class="form-row">
+          <div><label for="pet">Nome do pet *</label><input id="pet" name="pet" required placeholder="Nome do animal"></div>
+          <div><label for="especie">Espécie *</label>
+            <select id="especie" name="especie" required>
+              <option value="">Selecione</option><option>Cachorro</option><option>Gato</option><option>Outro</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="email">E-mail *</label>
+        <input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@exemplo.com">
+
+        <label for="telefone">Telefone *</label>
+        <input id="telefone" name="telefone" type="tel" autocomplete="tel" required placeholder="(00) 00000-0000">
+
+        <div class="form-row">
+          <div><label for="data">Data desejada *</label><input id="data" name="data" type="date" required></div>
+          <div><label for="horario">Período preferido *</label>
+            <select id="horario" name="horario" required>
+              <option value="">Selecione</option><option>Manhã</option><option>Tarde</option><option>Indiferente</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="servico">Serviço desejado *</label>
+        <select id="servico" name="servico" required>
+          <option value="">Selecione um serviço</option>
+          <option>Consulta veterinária</option><option>Vacinação</option>
+          <option>Exames laboratoriais</option><option>Saúde bucal</option>
+          <option>Orientação nutricional</option><option>Acompanhamento preventivo</option>
+          <option>Outro</option>
+        </select>
+
+        <label for="mensagem">Informações adicionais</label>
+        <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conte-nos um pouco sobre a necessidade do seu pet."></textarea>
+
+        <label class="check-label"><input type="checkbox" id="consentimento" required> Confirmo que as informações fornecidas estão corretas e concordo em utilizá-las para esta solicitação. *</label>
+
+        <button class="btn btn-full" type="submit">Preparar solicitação ↗</button>
+        <div id="booking-result" class="form-result" role="status" aria-live="polite" hidden></div>
+        <p class="form-footnote">Demonstração: os dados não são enviados nem armazenados por este site.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo logo-light" href="index.html">🐾 I Love <span>Pet</span></a>
+    <p>Amor e cuidado em cada patinha.</p>
+    <div class="footer-links"><a href="index.html">Início</a><a href="servicos.html">Serviços</a><a href="contato.html">Contato</a></div>
+    <small>© <span id="year"></span> I Love Pet. Projeto demonstrativo.</small>
+  </footer>
+</body>
+</html>
